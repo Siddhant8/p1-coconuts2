@@ -1,6 +1,7 @@
 package com.example.p1coconuts;
 
 import java.util.Objects;
+import java.util.Arrays;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,6 +12,7 @@ public class Covid {
     private @Id @GeneratedValue Long id;
     private String day;
     private String number;
+
 
     public Covid(){ }
 
@@ -65,6 +67,7 @@ public class Covid {
     @Override
     public String toString() {
         return "Cases{" + "id=" + this.id + ", Day='" + this.day + '\'' + ", Number of Cases='" + this.number + '\'' + '}';
+
     }
 
 }
