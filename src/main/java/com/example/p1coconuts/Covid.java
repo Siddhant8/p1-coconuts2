@@ -11,12 +11,12 @@ import javax.persistence.Id;
 public class Covid {
     private @Id @GeneratedValue Long id;
     private String day;
-    private String number;
+    private int number;
 
 
     public Covid(){ }
 
-    public Covid(String day, String number){
+    public Covid(String day, int number){
         this.day = day;
         this.number = number;
 
@@ -30,7 +30,7 @@ public class Covid {
         return day;
     }
 
-    public String getNumber(){
+    public int getNumber(){
         return number;
     }
 
@@ -42,7 +42,7 @@ public class Covid {
         this.day = day;
     }
 
-    public void setNumber(String role) {
+    public void setNumber(int role) {
         this.number = number;
     }
 
@@ -66,7 +66,7 @@ public class Covid {
 
     @Override
     public String toString() {
-        return "Cases{" + "id=" + this.id + ", Day='" + this.day + '\'' + ", Number of Cases='" + this.number + '\'' + '}';
+        return "Cases{" + "id=" + this.id + ", Day='" + this.day + '\'' + ", Number of Cases='" + this.number + '\'' + '}' + '\n';
 
     }
 

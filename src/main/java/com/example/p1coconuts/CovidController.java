@@ -54,10 +54,10 @@ public class CovidController {
                 });
     }
 
-    @DeleteMapping("/cases/{id}")
-    void deleteCovid(@PathVariable Long id) {
-        repository.deleteById(id);
-    }
+    //@DeleteMapping("/cases/{id}")
+    //void deleteCovid(@PathVariable Long id) {
+        //repository.deleteById(id);
+    //}
 
 
 
