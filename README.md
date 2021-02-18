@@ -4,6 +4,21 @@
 
 Summary: Our project involves creating a tea shop web server using Spring, and interacting with the tea shop in various ways. These “various ways” would be a jukebox, or ordering a beverage, or a coronavirus case tracker in the area (just to name a few). Some of these would be independent due to simplicity, but could also involve collaboration to blow them up in proportion. For example, the coronavirus tracker may start out as just a text box but then be blown up into an animation. 
 
+## Coconuts Shopping ##
+https://www.p1coconuts.tk/
+
+This program uses a database to dynamically generate products and item in your cart. To add something to your cart, click the cart+ icon on the card for the product you want. The item then is generated in your cart array and stored in your cookies.
+
+## Coconuts Chat ##
+https://coconutschat.tk
+
+Logins:
+User: aidanr Pass: aidanr
+User: siddhantr Pass: siddhantr
+User: johnm Pass: johnm
+
+This site is a personalized chat system where I can manage users and chat rooms. Right now, you can send messages and images using this program. To send a message, type what you want to send and hit the "enter" key on your keyboard, or the arrow on the screen. To upload an image, hit the image icon on the message line and upload a file. This is a chat system created with API.
+
 ## Delivery Plans and Content ##
 Friday Plans: Update the scrum board with goals completed for the week to achieve the necessary goals for Night at the Museum. 
 
