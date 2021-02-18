@@ -20,7 +20,7 @@ public class Covid {
 
     }
 
-
+    //getters and setters for each variable
     public Long getId() {
         return this.id;
     }

@@ -18,6 +18,7 @@ public class CovidController {
 
     @GetMapping("/cases")
     List<Covid> all() {
+        //finds all the covid cases in the repository
         return repository.findAll();
     }
 
