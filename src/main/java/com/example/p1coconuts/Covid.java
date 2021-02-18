@@ -1,7 +1,5 @@
 package com.example.p1coconuts;
 
-import java.util.Objects;
-import java.util.Arrays;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -16,9 +14,9 @@ public class Covid {
 
     public Covid(){ }
 
-    public Covid(String age, int number){
-        this.age = age;
-        this.number = number;
+    public Covid(String agePerson, int numberCase){
+        this.age = agePerson;
+        this.number = numberCase;
 
     }
 
@@ -34,31 +32,18 @@ public class Covid {
         return number;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setId(Long id1) {
+        this.id = id1;
     }
 
     public void setAge(String age1) {
         this.age = age1;
     }
 
-    public void setNumber(int role) {
-        this.number = number;
+    public void setNumber(int number1) {
+        this.number = number1;
     }
 
-
-    /*@Override
-    public boolean equals(Object object) {
-
-        Covid covid = (Covid) object;
-        return Objects.equals(this.id, covid.id) && Objects.equals(this.age, covid.age)
-                && Objects.equals(this.number, covid.number);
-    }*/
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(this.id, this.age, this.age);
-    }
 
     @Override
     public String toString() {
