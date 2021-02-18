@@ -9,6 +9,7 @@ https://www.p1coconuts.tk/
 
 ![image](https://user-images.githubusercontent.com/54915593/108390132-3369cd80-71c5-11eb-9279-eb70cfae03d2.png)
 ![image](https://user-images.githubusercontent.com/54915593/108390158-3bc20880-71c5-11eb-90fe-070470ccdb97.png)
+https://github.com/AndrewH06/teashop2
 
 This program uses a database to dynamically generate products and item in your cart. To add something to your cart, click the cart+ icon on the card for the product you want. The item then is generated in your cart array and stored in your cookies.
 
@@ -16,6 +17,7 @@ This program uses a database to dynamically generate products and item in your c
 https://coconutschat.tk
 
 ![image](https://user-images.githubusercontent.com/54915593/108390067-22b95780-71c5-11eb-9572-d6d2cc1f3c31.png)
+https://github.com/AndrewH06/coconutschat
 
 Logins:
 User: aidanr Pass: aidanr
