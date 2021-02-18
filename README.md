@@ -32,10 +32,10 @@ This site is a personalized chat system where I can manage users and chat rooms.
 ## Coronavirus Cases ##
 <img width="1023" alt="Screen Shot 2021-02-18 at 2 35 08 PM" src="https://user-images.githubusercontent.com/71453341/108431141-56ad7080-71f7-11eb-9f27-829151247742.png">
 
-This picture shows the home page and the table of coronavirus cases using HTML. The table was added to the index.html file for the home page. On the home page there will be a link saying "Get The San Diego Coronavirus Statistics From Our Built - In Database". This link leads to the database with these cases stored. So far an issue with this code is that the html table cannot automatically retrieve the number of coronavirus cases for each age group stored in the database. The table and the cases for each age group had to be manually entered into the table. Going back to the home page is the same as going back on any other page on the internet by clicking the back button.
+The home page contains a table of San Diego County's Coronavirus Cases. Click "Get The San Diego Coronavirus Statistics From Our Built - In Database" to view the built-in database of coronavirus cases for San Diego County. Currently the table does not retrieve cases from the database.
 
 <img width="930" alt="Screen Shot 2021-02-18 at 2 45 26 PM" src="https://user-images.githubusercontent.com/71453341/108431629-fb2fb280-71f7-11eb-8f08-857cc967fc26.png">
-This is what the contents of the database will look like.
+This is what the contents of the database will look like. Click the back arrow to go back to the home page. It is the same as going to the previous page on any other website.
 
 
 ## Delivery Plans and Content ##
