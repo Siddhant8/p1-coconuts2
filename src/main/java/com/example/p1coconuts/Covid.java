@@ -10,15 +10,15 @@ import javax.persistence.Id;
 @Entity
 public class Covid {
     private @Id @GeneratedValue Long id;
-    private String age;
+    private int age;
     private int number;
 
 
     public Covid(){ }
 
-    public Covid(String age, int number){
-        this.age = age;
-        this.number = number;
+    public Covid(int agePerson, int numberCase){
+        this.age = agePerson;
+        this.number = numberCase;
 
     }
 
@@ -26,7 +26,7 @@ public class Covid {
     public Long getId() {
         return this.id;
     }
-    public String getAge(){
+    public int getAge(){
         return age;
     }
 
@@ -34,31 +34,18 @@ public class Covid {
         return number;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setId(Long id1) {
+        this.id = id1;
     }
 
-    public void setAge(String age1) {
+    public void setAge(int age1) {
         this.age = age1;
     }
 
-    public void setNumber(int role) {
-        this.number = number;
+    public void setNumber(int number1) {
+        this.number = number1;
     }
 
-
-    /*@Override
-    public boolean equals(Object object) {
-
-        Covid covid = (Covid) object;
-        return Objects.equals(this.id, covid.id) && Objects.equals(this.age, covid.age)
-                && Objects.equals(this.number, covid.number);
-    }*/
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(this.id, this.age, this.age);
-    }
 
     @Override
     public String toString() {
