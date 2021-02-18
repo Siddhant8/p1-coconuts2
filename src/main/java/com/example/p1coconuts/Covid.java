@@ -8,13 +8,13 @@ import javax.persistence.Id;
 @Entity
 public class Covid {
     private @Id @GeneratedValue Long id;
-    private int age;
+    private String age;
     private int number;
 
 
     public Covid(){ }
 
-    public Covid(int agePerson, int numberCase){
+    public Covid(String agePerson, int numberCase){
         this.age = agePerson;
         this.number = numberCase;
 
@@ -24,7 +24,7 @@ public class Covid {
     public Long getId() {
         return this.id;
     }
-    public int getAge(){
+    public String getAge(){
         return age;
     }
 
@@ -36,7 +36,7 @@ public class Covid {
         this.id = id1;
     }
 
-    public void setAge(int age1) {
+    public void setAge(String age1) {
         this.age = age1;
     }
 
