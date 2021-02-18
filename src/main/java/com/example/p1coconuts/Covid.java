@@ -10,14 +10,14 @@ import javax.persistence.Id;
 @Entity
 public class Covid {
     private @Id @GeneratedValue Long id;
-    private String day;
+    private String age;
     private int number;
 
 
     public Covid(){ }
 
-    public Covid(String day, int number){
-        this.day = day;
+    public Covid(String age, int number){
+        this.age = age;
         this.number = number;
 
     }
@@ -26,8 +26,8 @@ public class Covid {
     public Long getId() {
         return this.id;
     }
-    public String getDay(){
-        return day;
+    public String getAge(){
+        return age;
     }
 
     public int getNumber(){
@@ -38,8 +38,8 @@ public class Covid {
         this.id = id;
     }
 
-    public void setDay(String name) {
-        this.day = day;
+    public void setAge(String age1) {
+        this.age = age1;
     }
 
     public void setNumber(int role) {
@@ -47,26 +47,22 @@ public class Covid {
     }
 
 
-    @Override
-    public boolean equals(Object o) {
+    /*@Override
+    public boolean equals(Object object) {
 
-        if (this == o)
-            return true;
-        if (!(o instanceof Covid))
-            return false;
-        Covid covid = (Covid) o;
-        return Objects.equals(this.id, covid.id) && Objects.equals(this.day, covid.day)
+        Covid covid = (Covid) object;
+        return Objects.equals(this.id, covid.id) && Objects.equals(this.age, covid.age)
                 && Objects.equals(this.number, covid.number);
-    }
+    }*/
 
     @Override
     public int hashCode() {
-        return Objects.hash(this.id, this.day, this.day);
+        return Objects.hash(this.id, this.age, this.age);
     }
 
     @Override
     public String toString() {
-        return "Cases{" + "id=" + this.id + ", Day='" + this.day + '\'' + ", Number of Cases='" + this.number + '\'' + '}' + '\n';
+        return "Cases{" + "Age='" + this.age + '\'' + ", Number of Cases='" + this.number + '\'' + '}' + '\n';
 
     }
 

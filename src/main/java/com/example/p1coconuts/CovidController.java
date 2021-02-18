@@ -17,34 +17,30 @@ public class CovidController {
     }
 
 
-    // Aggregate root
-    // tag::get-aggregate-root[]
     @GetMapping("/cases")
     List<Covid> all() {
         return repository.findAll();
     }
-    // end::get-aggregate-root[]
 
     @PostMapping("/cases")
-    Covid newEmployee(@RequestBody Covid newCovid) {
+    Covid newCase(@RequestBody Covid newCovid) {
         return repository.save(newCovid);
     }
 
-    // Single item
 
-    @GetMapping("/cases/{id}")
+    /*@GetMapping("/cases/{id}")
     Covid one(@PathVariable Long id) {
 
-        return repository.findById(id)
-                .orElseThrow(() -> new CovidNotFoundException(id));
-    }
+        return repository.findById(id);
+                //.orElseThrow(() -> new CovidNotFoundException(id));
+    }*/
 
     @PutMapping("/cases/{id}")
     Covid replaceCovid(@RequestBody Covid newCovid, @PathVariable Long id) {
 
         return repository.findById(id)
                 .map(covid -> {
-                    covid.setDay(newCovid.getDay());
+                    covid.setAge(newCovid.getAge());
                     covid.setNumber(newCovid.getNumber());
                     return repository.save(covid);
                 })
@@ -53,12 +49,5 @@ public class CovidController {
                     return repository.save(newCovid);
                 });
     }
-
-    //@DeleteMapping("/cases/{id}")
-    //void deleteCovid(@PathVariable Long id) {
-        //repository.deleteById(id);
-    //}
-
-
 
 }

@@ -15,16 +15,16 @@ public class LoadDatabase {
     CommandLineRunner initDatabase(CovidRepository repository) {
 
         return args -> {
-            log.info("Preloading " + repository.save(new Covid("1", 50)));
-            log.info("Preloading " + repository.save(new Covid("2", 100)));
-            log.info("Preloading" + repository.save(new Covid("3", 200)));
-            log.info("Preloading " + repository.save(new Covid("4", 400)));
-            log.info("Preloading " + repository.save(new Covid("5", 800)));
-            log.info("Preloading " + repository.save(new Covid("6", 1600)));
-            log.info("Preloading " + repository.save(new Covid("7", 3200)));
-            log.info("Preloading " + repository.save(new Covid("8", 6400)));
-            log.info("Preloading " + repository.save(new Covid("9", 12800)));
-            log.info("Preloading " + repository.save(new Covid("10", 25600)));
+            log.info("Preloading " + repository.save(new Covid("0-9", 13587)));
+            log.info("Preloading " + repository.save(new Covid("10-19", 27717)));
+            log.info("Preloading" + repository.save(new Covid("20-29", 55906)));
+            log.info("Preloading " + repository.save(new Covid("30-39", 44833)));
+            log.info("Preloading " + repository.save(new Covid("40-49", 36154)));
+            log.info("Preloading " + repository.save(new Covid("50-59", 34438)));
+            log.info("Preloading " + repository.save(new Covid("60-69", 22289)));
+            log.info("Preloading " + repository.save(new Covid("70-79", 10571)));
+            log.info("Preloading " + repository.save(new Covid("80+", 7961)));
+            log.info("Preloading " + repository.save(new Covid("Unknown", 185)));
 
         };
     }
