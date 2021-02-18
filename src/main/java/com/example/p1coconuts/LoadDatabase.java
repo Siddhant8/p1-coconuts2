@@ -22,6 +22,7 @@ public class LoadDatabase {
             log.info("Preloading " + repository.save(new Covid(50-59, 34438)));
             log.info("Preloading " + repository.save(new Covid(60-69, 22289)));
             log.info("Preloading " + repository.save(new Covid(70-79, 10571)));
+            //supposed to be 80+
             log.info("Preloading " + repository.save(new Covid(80, 7961)));
 
         };

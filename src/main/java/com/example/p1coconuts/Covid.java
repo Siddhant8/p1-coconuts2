@@ -1,7 +1,5 @@
 package com.example.p1coconuts;
 
-import java.util.Objects;
-import java.util.Arrays;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
