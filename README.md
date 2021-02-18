@@ -25,7 +25,7 @@ User: johnm Pass: johnm
 This site is a personalized chat system where I can manage users and chat rooms. Right now, you can send messages and images using this program. To send a message, type what you want to send and hit the "enter" key on your keyboard, or the arrow on the screen. To upload an image, hit the image icon on the message line and upload a file. This is a chat system created with API.
 
 ## Coronavirus Cases ##
-On the home page of the website there will be a table that shows the total number of coronavirus cases in San Diego County for each age group. Above the table there will be a line of text saying "Get The San Diego Coronavirus Statistics From Our Database here". That line of text will actually be a link. Please click that link to view the H2 in-memory database created. The cases for each age group in San Diego county were manually entered into this database.  
+On the home page of the website there will be a table that shows the total number of coronavirus cases in San Diego County for each age group. Above the table there will be a line of text saying "Get The San Diego Coronavirus Statistics From Our Database here". That line of text will actually be a link. Please click that link to view the H2 in-memory database created. The cases for each age group in San Diego county were manually entered into this database. So far an issue with this code is that the html table cannot automatically retrieve the number of coronavirus cases for each age group stored in the database. The table and the cases for each age group had to be manually entered into the table.
 
 ## Delivery Plans and Content ##
 Friday Plans: Update the scrum board with goals completed for the week to achieve the necessary goals for Night at the Museum. 
