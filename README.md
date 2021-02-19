@@ -42,6 +42,8 @@ This is what the contents of the database will look like. Click the back arrow t
 ## JukeBox ##
 <img width="1023" alt="Screen shot" src="https://user-images.githubusercontent.com/43625295/108452522-80798e00-721d-11eb-8579-192355a4273b.PNG">
 
+Please note that the grey box with the sad file is because the youtube HTML tag doesn't work when running on localhost. Please use the Heroku link to access the site.
+
 This jukebox can be navigated to by clicking the link "go to jukebox here" on the home page. This JukeBox will be basically the same as the Java version, where URLs can be saved as "cassettes". The difference now will be that urls will be stored in a database as a key-value pair, and will be fetched whenever the site is loaded. 
 
 For now, a sample youtube url has been embedded, along with an input field to the left (it doesn't do anything right now). There's also a link to go straight back to the home page.
