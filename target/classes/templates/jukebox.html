@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JukeBox</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        body {
+            background-image: url('https://tse1.mm.bing.net/th?id=OIP.blIT6vc8Ftb31oD0n_KJHwHaD_&pid=Api');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: blue;
+        }
+        p {
+            color: deeppink;
+            background-color: black;
+        }
+        label {
+            color: deeppink;
+            background-color: black;
+        }
+    </style> <!--Need to define style for whole body-->
+</head>
+<body>
+
+    <p> Welcome to the JukeBox!</p>
+    <p>To get back home, go to this <a href="/">link</a></p>
+    <p>Use the input bar below to type in a URL to a song!</p>
+    <label for="name">Copy-paste your URL:</label>
+    <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+    <!--The above does NOT currently work yet!-->
+    <iframe width="420" height="315"
+            src="https://www.youtube.com/watch?v=_RPZtNIZSZ8&t=1s">
+    </iframe>
+
+</body>
+</html>
