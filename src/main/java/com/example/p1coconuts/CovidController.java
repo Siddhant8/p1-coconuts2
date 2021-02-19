@@ -2,7 +2,6 @@ package com.example.p1coconuts;
 
 import java.util.List;
 
-
 import org.springframework.web.bind.annotation.*;
 
 
@@ -19,6 +18,7 @@ public class CovidController {
 
     @GetMapping("/cases")
     List<Covid> all() {
+        //finds all the covid cases in the repository
         return repository.findAll();
     }
 
