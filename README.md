@@ -39,7 +39,12 @@ The home page contains a table of San Diego County's Coronavirus Cases. Click "G
 <img width="930" alt="Screen Shot 2021-02-18 at 2 45 26 PM" src="https://user-images.githubusercontent.com/71453341/108431629-fb2fb280-71f7-11eb-8f08-857cc967fc26.png">
 This is what the contents of the database will look like. Click the back arrow to go back to the home page. It is the same as going to the previous page on any other website.
 
+## JukeBox ##
+<img width="1023" alt="Screen shot" src="https://user-images.githubusercontent.com/43625295/108452522-80798e00-721d-11eb-8579-192355a4273b.PNG">
 
+This jukebox can be navigated to by clicking the link "go to jukebox here" on the home page. This JukeBox will be basically the same as the Java version, where URLs can be saved as "cassettes". The difference now will be that urls will be stored in a database as a key-value pair, and will be fetched whenever the site is loaded. 
+
+For now, a sample youtube url has been embedded, along with an input field to the left (it doesn't do anything right now). There's also a link to go straight back to the home page.
 ## Delivery Plans and Content ##
 Friday Plans: Update the scrum board with goals completed for the week to achieve the necessary goals for Night at the Museum. 
 
