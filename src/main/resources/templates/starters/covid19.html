@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="contact" style="height: 35vh;">
+    <div class="contact" style="height: 35vh;">
+        <div style="margin: 2%;">
+            <h1><strong>Calculate the Number of Coronavirus Cases</strong></h1>
+        </div>
+        <div style="margin: 2%;">
+            <form id="covidCalc" action="/covid" method="GET" >
+                <label for="people">Type the number of people</label>
+                <input name="people" id="people" type="number">
+                <button>Enter!</button>
+            </form>
+        </div>
+        <div style="margin: 2%;">
+            <p th:text="'Number of Cases after 10 days: ' + ${people}"></p>
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
