@@ -4,17 +4,17 @@ package com.example.p1coconuts;
 import java.io.IOException;
 
 public class CovidCases {
-    int people;
+    int people = 2000;
     double maskers;
-    int initCases = 1;
-    int days = 10;
+    double initCases;
+    int days;
     int finalCases;
 
-    public CovidCases(int p){
-        people = p;
+    public CovidCases(int d){
+        this.people = people;
         this.maskers = maskers;
         this.initCases = initCases;
-        this.days = days;
+        this.days = d;
         this.finalCases = finalCases;
     }
 
@@ -24,7 +24,7 @@ public class CovidCases {
 
     public void setMaskers(){
         getPeople();
-        maskers = people/2;
+        maskers = people/1.2;
     }
 
     public double getMaskers(){
@@ -32,7 +32,12 @@ public class CovidCases {
         return maskers;
     }
 
-    public int getInitCases(){
+    public void setInitCases(){
+        initCases = 0.01*people;
+    }
+
+    public double getInitCases(){
+        setInitCases();
         return initCases;
     }
 
@@ -49,8 +54,8 @@ public class CovidCases {
         double nonMaskWearers = people - maskers;
         double doubleNonMaskWearers = nonMaskWearers;
         System.out.println(nonMaskWearers);
-        double calculationProportion = 1/maskers;
-        //double calculationProportion = nonMaskWearers / people;
+        //double calculationProportion = 1/maskers;
+        double calculationProportion = nonMaskWearers / people;
         //double dubNumMaskers = maskers;
         //double calculationProportion = dubNumMaskers/numPeople ;
         //double calculationProportion = 0.2;
@@ -73,8 +78,8 @@ public class CovidCases {
         return finalCases;
     }
 
-    public static int driver(int people) throws IOException {
-        CovidCases cases = new CovidCases(people);
+    public static int driver(int daysPast) throws IOException {
+        CovidCases cases = new CovidCases(daysPast);
         int y = cases.getFinalCases();
         return y;
     }

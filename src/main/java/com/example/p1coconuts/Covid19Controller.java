@@ -17,10 +17,10 @@ import java.util.HashMap;
 @Controller
 public class Covid19Controller{
     @GetMapping("/covid")
-    public String covid(@RequestParam(name="people", required=false,  defaultValue="100") String people, Model model) throws IOException {
-        int nth = Integer.parseInt(people);
+    public String covid(@RequestParam(name="days", required=false,  defaultValue="10") String days, Model model) throws IOException {
+        int nth = Integer.parseInt(days);
 
-        model.addAttribute("people", CovidCases.driver(nth));
+        model.addAttribute("days", CovidCases.driver(nth));
         return "starters/covid19";
     }
 }

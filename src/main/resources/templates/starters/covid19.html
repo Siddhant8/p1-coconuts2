@@ -12,13 +12,13 @@
         </div>
         <div style="margin: 2%;">
             <form id="covidCalc" action="/covid" method="GET" >
-                <label for="people">Type the number of people</label>
-                <input name="people" id="people" type="number">
+                <label for="days">Type the number of people</label>
+                <input name="days" id="days" type="number">
                 <button>Enter!</button>
             </form>
         </div>
         <div style="margin: 2%;">
-            <p th:text="'Number of Cases after 10 days: ' + ${people}"></p>
+            <p th:text="'Number of Cases with a population of 2000: ' + ${days}"></p>
 
         </div>
 
