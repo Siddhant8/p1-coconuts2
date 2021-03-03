@@ -32,7 +32,7 @@ User: johnm Pass: johnm
 This site is a personalized chat system where I can manage users and chat rooms. Right now, you can send messages and images using this program. To send a message, type what you want to send and hit the "enter" key on your keyboard, or the arrow on the screen. To upload an image, hit the image icon on the message line and upload a file. This is a chat system created with API.
 
 ## Coronavirus Case Calculator ##
-# Summary #
+### Summary ###
 The coronavirus case simulator simulates the exponential growth of the coronavirus pandemic for a community of 2000 people. The initial number of people who have coronavirus is 1 percent of the total population. The user will input the number of days the coronavirus pandemic has gone on for during the simulation. The maximum number of days the user can input into the system is 25. When the user clicks enter the total number of coronavirus cases up to that specific day into the pandemic will appear on the webpage. After the simulation this webpage contains more information about what exponential growth is and provides warnings about the dangers of the coronavirus pandemic.
 
 
