@@ -31,13 +31,11 @@ User: johnm Pass: johnm
 
 This site is a personalized chat system where I can manage users and chat rooms. Right now, you can send messages and images using this program. To send a message, type what you want to send and hit the "enter" key on your keyboard, or the arrow on the screen. To upload an image, hit the image icon on the message line and upload a file. This is a chat system created with API.
 
-## Coronavirus Cases ##
-<img width="1023" alt="Screen Shot 2021-02-18 at 2 35 08 PM" src="https://user-images.githubusercontent.com/71453341/108431141-56ad7080-71f7-11eb-9f27-829151247742.png">
+## Coronavirus Case Calculator ##
+### Summary ###
+The coronavirus case simulator simulates the exponential growth of the coronavirus pandemic for a community of 2000 people. The initial number of people who have coronavirus is 1 percent of the total population. The user will input the number of days the coronavirus pandemic has gone on for during the simulation. The maximum number of days the user can input into the system is 25. When the user clicks enter the total number of coronavirus cases up to that specific day into the pandemic will appear on the webpage. After the simulation this webpage contains more information about what exponential growth is and provides warnings about the dangers of the coronavirus pandemic.
 
-The home page contains a table of San Diego County's Coronavirus Cases. Click "Get The San Diego Coronavirus Statistics From Our Built - In Database" to view the built-in database of coronavirus cases for San Diego County. Currently the table does not retrieve cases from the database.
 
-<img width="930" alt="Screen Shot 2021-02-18 at 2 45 26 PM" src="https://user-images.githubusercontent.com/71453341/108431629-fb2fb280-71f7-11eb-8f08-857cc967fc26.png">
-This is what the contents of the database will look like. Click the back arrow to go back to the home page. It is the same as going to the previous page on any other website.
 
 ## JukeBox ##
 <img width="1023" alt="Screen shot" src="https://user-images.githubusercontent.com/43625295/108452522-80798e00-721d-11eb-8579-192355a4273b.PNG">
