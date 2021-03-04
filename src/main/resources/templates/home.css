@@ -1,0 +1,65 @@
+body {
+  height: 100vh;
+  background: linear-gradient(#264891, #3884ce, #3884ce);
+  color: white;
+  overflow: hidden;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h2 {
+  opacity: 0;
+  margin-top: 70px;
+  font-size: 40px;
+  animation: fadeIn ease 2s forwards;
+}
+
+.title h1 {
+  opacity: 0;
+  font-size: 60px;
+  font-weight: 800;
+  animation: fadeIn ease 2s 1s forwards;
+}
+
+.title h3 {
+  opacity: 0;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  animation: fadeIn ease 2s 3s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.sand {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+}
+
+.coconut {
+  height: 100px;
+  float: right;
+  margin-right: 120px;
+  transform: translateY(200px);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+  padding: 7px;
+  font-size: 12px;
+  background-color: #e0e0e080;
+  color: #000;
+}
