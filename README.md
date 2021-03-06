@@ -35,6 +35,8 @@ This site is a personalized chat system where I can manage users and chat rooms.
 ### Summary ###
 The coronavirus case simulator simulates the exponential growth of the coronavirus pandemic for a community of 2000 people. The initial number of people who have coronavirus is 1 percent of the total population. The user will input the number of days the coronavirus pandemic has gone on for during the simulation. The maximum number of days the user can input into the system is 25. When the user clicks enter the total number of coronavirus cases up to that specific day into the pandemic will appear on the webpage. After the simulation this webpage contains more information about what exponential growth is and provides warnings about the dangers of the coronavirus pandemic.
 
+### Runtime ###
+On the main menu bar of the home page there is a button that says Covid-19 Simulation. Clicking that button will take the user to the Coronavirus Case Calculator simulation. There will be a small portion of the text in the beginning explaining the setting and background of the simulation. The user's job is to input a number from 1 to 25 into the textbox on the website. That number 1 - 25 represents the number of days that have passed since the Coronavirus outbreak began. When the user clicks enter after inputting their number, the line of text below the textfield displays the total number of cases up to the day number the user has inputted. After the simulation there is another small section of text describing exponential growth as more information about the simulation.
 
 
 ## JukeBox ##
@@ -45,10 +47,7 @@ Please note that the grey box with the sad file is because the youtube HTML tag 
 This jukebox can be navigated to by clicking the link "go to jukebox here" on the home page. This JukeBox will be basically the same as the Java version, where URLs can be saved as "cassettes". The difference now will be that urls will be stored in a database as a key-value pair, and will be fetched whenever the site is loaded. 
 
 For now, a sample youtube url has been embedded, along with an input field to the left (it doesn't do anything right now). There's also a link to go straight back to the home page.
-## Delivery Plans and Content ##
-Friday Plans: Update the scrum board with goals completed for the week to achieve the necessary goals for Night at the Museum. 
 
-Night at the Museum: A spring website will be created through a local host. There will be a button to click for the tea shop, JukeBox, and coronavirus calculator. 
 
 ## Big Ticket Items ##
 
