@@ -14,7 +14,7 @@
         </div>
         <div style="margin: 2%;"></div>
         <p th:text="'This Coronavirus case simulation calculates the number of cases for a population of 2000 people. 83 percent of the population is wearing masks. The initial number of cases is 20. The user will enter into the text box how many days they want to have passed since the first day of the outbreak. When the user clicks the button enter next to the text box the total number of cases there have been on the day number the user inputs.'"></p>
-
+        <p><a href="/covid2">Second Formula </a>  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  <a href="/covid3">Third Formula</a></p>
         <div style="margin: 2%;">
             <form id="covidCalc" action="/covid" method="GET" >
                 <label for="days">Type the number of days:</label>
@@ -23,15 +23,17 @@
             </form>
         </div>
         <div style="margin: 2%;">
+            <p>Formula: y = y<sub>0</sub> e <sup>kt</sup></p>
             <p th:text="'Number of Cases with a population of 2000: ' + ${days}"></p>
 
         </div>
+
+
         <div style="margin: 2%;"></div>
-            <p th:text="'The growth of coronavirus cases is undergoing an exponential growth pattern. In exponential growth the more time that passes the faster the number of coronavirus cases will increase. The formula in this case is 20, the initial number of cases, multiplied by e raised to the 0.17t power, t being the number of days. 0.17 is the proportion of people not wearing masks.'"> </p>
+            <p th:text="'The growth of coronavirus cases is undergoing an exponential growth pattern. In exponential growth the more time that passes the faster the number of coronavirus cases will increase. y represents the total number of cases, 20 is the initial number of cases, and k is the proportion of the population not wearing face masks.'"> </p>
         </div>
-        <div style="margin: 2%;">
-            <a href="https://math.libretexts.org/Bookshelves/Calculus/Book%3A_Calculus_(OpenStax)/06%3A_Applications_of_Integration/6.8%3A_Exponential_Growth_and_Decay">Click on this link to learn more about exponential growth.</a>
-    </div>
+
+
 </div>
 
 </body>
