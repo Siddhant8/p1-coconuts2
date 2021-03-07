@@ -10,6 +10,116 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      header {
+        padding: 6px 10px;
+        display: flex;
+        height: 68px;
+        background-color: #2f2f2f33;
+        margin-bottom: 20px;
+      }
+
+      .logo {
+        width: 50px;
+        height: 50px;
+      }
+
+      nav {
+        width: 100vw;
+      }
+
+      nav ul {
+        transform: translateX(-40px);
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        margin: 15px 15rem;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        transition: 0.2s;
+      }
+
+      nav ul li a:hover {
+        padding: 0 10px 0 10px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #7ae582;
+      }
+      body {
+        height: 100vh;
+        background: linear-gradient(#264891, #3884ce, #3884ce);
+        color: white;
+        overflow: hidden;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .title h2 {
+        opacity: 0;
+        margin-top: 70px;
+        font-size: 40px;
+        animation: fadeIn ease 2s forwards;
+      }
+
+      .title h1 {
+        opacity: 0;
+        font-size: 60px;
+        font-weight: 800;
+        animation: fadeIn ease 2s 1s forwards;
+      }
+
+      .title h3 {
+        opacity: 0;
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 200;
+        animation: fadeIn ease 2s 3s forwards;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .sand {
+        width: 100vw;
+        position: absolute;
+        bottom: 0;
+      }
+
+      .coconut {
+        height: 100px;
+        float: right;
+        margin-right: 120px;
+        transform: translateY(150px);
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        text-align: center;
+        padding: 7px;
+        font-size: 12px;
+        background-color: #e0e0e080;
+        color: #000;
+      }
+    </style>
   </head>
   <header>
     <a href="/"
@@ -20,11 +130,9 @@
     /></a>
     <nav>
       <ul class="navbar-links">
-        <li><a href="/greeting">Greeting</a></li>
-        <li><a href="/cases">Covid-19 Cases</a></li>
         <li><a href="/covid">Covid-19 Simulation</a></li>
         <li><a href="/jukebox">Jukebox</a></li>
-        <li><a href="https://www.p1coconuts.tk/">Teashop</a></li>
+        <li><a href="http://coconuts-teashop.tk/">Teashop</a></li>
         <li><a href="https://coconutschat.tk/">Chat</a></li>
       </ul>
     </nav>

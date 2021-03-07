@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Coronavirus Calculator</title>
+</head>
+<body>
+
+
+<div class="contact" style="height: 35vh;">
+    <div class="contact" style="height: 35vh;">
+
+        <div style="margin: 2%;">
+            <h1><strong>Calculate the Number of Coronavirus Cases - Formula 3</strong></h1>
+        </div>
+        <div style="margin: 2%;"></div>
+        <p><a href="/covid">Formula 1</a></p>
+        <p><a href="/covid2">Formula 2</a></p>
+
+        <div style="margin: 2%;">
+            <form id="covidCalc" action="/covid4" method="GET" >
+                <label for="days">Type the number of days:</label>
+                <input name="days" id="days" type="number">
+                <button>Enter!</button>
+            </form>
+        </div>
+        <div style="margin: 2%;">
+            <p>Formula: (r)<sup>(1/3)t</sup> * (r)<sup>(2/3)t</sup></p>
+            <p th:text="'Number of Cases with a population of 2000: ' + ${days}"></p>
+
+        </div>
+        <div style="margin: 2%;"></div>
+        <p th:text="'In this formula y represents the total number of cases, r represents the growth rate, and t represents the number of days that the user inputs.'"> </p>
+    </div>
+
+</div>
+
+</body>
+</html>
