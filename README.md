@@ -59,10 +59,6 @@ This jukebox can be navigated to by clicking the link "go to jukebox here" on th
 For now, a sample youtube url has been embedded, along with an input field to the left (it doesn't do anything right now). There's also a link to go straight back to the home page.
 
 
-## Big Ticket Items ##
-
-<img width="771" alt="Screen Shot 2021-01-27 at 8 01 51 AM" src="https://user-images.githubusercontent.com/71453341/106018351-44b43400-6076-11eb-85a3-48a61aa70f7f.png">
-<img width="769" alt="Screen Shot 2021-01-27 at 8 02 24 AM" src="https://user-images.githubusercontent.com/71453341/106018358-467df780-6076-11eb-9ca5-a9399211193b.png">
 
 ### Visual Display of Tickets ###
 <img width="785" alt="Screen Shot 2021-02-02 at 8 12 56 PM" src="https://user-images.githubusercontent.com/71453341/106697185-1e6d2780-6593-11eb-9719-c7b0d467b7eb.png">
