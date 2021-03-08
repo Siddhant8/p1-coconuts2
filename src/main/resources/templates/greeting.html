@@ -1,10 +1,76 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
     <title>Coconuts Website</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        .apPrep h1 {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .journal {
+            width: 300px;
+            margin: auto;
+            border-radius: 40px;
+            padding: 20px;
+            background-color: rgb(8, 12, 46);
+            color: #fff;
+        }
+
+        .apPrep h2 {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .frq {
+            list-style: none;
+            transform: translateX(-10px);
+        }
+
+        .apPrep li{
+            padding: 20px 10px;
+            width: 200px;
+            margin: auto;
+            margin-bottom: 20px;
+            background-color: rgb(8, 12, 46);
+            border-radius: 30px;
+            text-align: center;
+        }
+
+        .apPrep a {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-<p th:text="'Hello, ' + ${name} + '!'" />
+    <div class="apPrep">
+        <h1>Congrats! You Found the Easter Egg!</h1>
+        <a href="google.com"><h2 class="journal">
+            Journal
+        </h2></a>
+        <h2>
+            AP Free Response Questions
+        </h2>
+        <ul class="frq">
+            <li><a href=https://repl.it/join/xzkxtjlh-aidanrosen>Unit 2</a></li>
+            <li><a href=https://repl.it/@APCSAP1/Unit3FRQ>Unit 3</a></li>
+            <li><a href=https://repl.it/@SiddhantRanka/Unit10FRQ#Main.java>Unit 10</a></li>
+            <li><a href=https://repl.it/@AidanRosen/FRQ-9#Main.java>Unit 9</a></li>
+      </ul>
+    </div>
 </body>
 </html>

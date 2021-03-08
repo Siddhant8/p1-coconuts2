@@ -50,7 +50,7 @@ body {
   height: 100px;
   float: right;
   margin-right: 120px;
-  transform: translateY(200px);
+  transform: translateY(30vh);
 }
 
 footer {
