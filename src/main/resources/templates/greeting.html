@@ -14,6 +14,44 @@
             font-family: "Open Sans", sans-serif;
         }
 
+        header {
+        padding: 6px 10px;
+        display: flex;
+        height: 68px;
+        background-color: #1a2d52;
+        margin-bottom: 20px;
+      }
+
+      .logo {
+        width: 50px;
+        height: 50px;
+      }
+
+      nav {
+        width: 100vw;
+      }
+
+      nav ul {
+        transform: translateX(-40px);
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        margin: 15px 15rem;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        transition: 0.2s;
+      }
+
+      nav ul li a:hover {
+        padding: 0 10px 0 10px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #7ae582;
+      }
+
         .apPrep h1 {
             text-align: center;
             margin-top: 20px;
@@ -37,7 +75,7 @@
 
         .frq {
             list-style: none;
-            transform: translateX(-10px);
+            transform: translateX(-20px);
         }
 
         .apPrep li{
@@ -56,6 +94,22 @@
         }
     </style>
 </head>
+<header>
+    <a href="/"
+      ><img
+        class="logo"
+        src="https://www.pinclipart.com/picdir/big/20-204396_coconut-clipart-coconut-fruit-clipart-png-download.png"
+        alt="coconuts logo"
+    /></a>
+    <nav>
+      <ul class="navbar-links">
+        <li><a href="/covid">Covid-19 Simulation</a></li>
+        <li><a href="/jukebox">Jukebox</a></li>
+        <li><a href="http://coconuts-teashop.tk/">Teashop</a></li>
+        <li><a href="https://coconutschat.tk/">Chat</a></li>
+      </ul>
+    </nav>
+  </header>
 <body>
     <div class="apPrep">
         <h1>Congrats! You Found the Easter Egg!</h1>
@@ -66,10 +120,11 @@
             AP Free Response Questions
         </h2>
         <ul class="frq">
-            <li><a href=https://repl.it/join/xzkxtjlh-aidanrosen>Unit 2</a></li>
-            <li><a href=https://repl.it/@APCSAP1/Unit3FRQ>Unit 3</a></li>
-            <li><a href=https://repl.it/@SiddhantRanka/Unit10FRQ#Main.java>Unit 10</a></li>
-            <li><a href=https://repl.it/@AidanRosen/FRQ-9#Main.java>Unit 9</a></li>
+            <a href=https://repl.it/join/xzkxtjlh-aidanrosen><li>Unit 2</li></a>
+            <a href=https://repl.it/@APCSAP1/Unit3FRQ><li>Unit 3</li></a>
+            <a href=https://repl.it/@ahale1/Unit-7-FRQ#Main.java><li>Unit 7</li></a>
+            <a href=https://repl.it/@AidanRosen/FRQ-9#Main.java><li>Unit 9</li></a>
+            <a href=https://repl.it/@SiddhantRanka/Unit10FRQ#Main.java><li>Unit 10</li></a>
       </ul>
     </div>
 </body>
