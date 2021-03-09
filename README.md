@@ -21,6 +21,8 @@ Here you will find the link to the journal and all of our FRQs from the year.
 ![image](https://user-images.githubusercontent.com/54915593/110502352-fb60f680-80af-11eb-9a0e-a2759c99a6c1.png)
 
 ## Juke Box Technicals ##
+![githubUpload](https://user-images.githubusercontent.com/43625295/110549495-fd927780-80e6-11eb-8af9-161db84fe2f8.PNG)
+
 
 The jukebox uses these files: jukebox.html (the view), BasicPojo and JukeBoxModel (my POJO's), JukeBox Controller (for Thymeleaf attributes and database communication), JukeBoxRepository and SongSqlRepository (for handling the database), and load database (to initialize database). 
 
