@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta charset="UTF-8">
@@ -26,13 +26,25 @@
 
     <p> Welcome to the JukeBox!</p>
     <p>To get back home, go to this <a href="/">link</a></p>
-    <p>Use the input bar below to type in a URL to a song!</p>
-    <label for="name">Copy-paste your URL:</label>
-    <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
-    <!--The above does NOT currently work yet!-->
-    <iframe width="420" height="315"
-            src="https://www.youtube.com/watch?v=_RPZtNIZSZ8&t=1s">
-    </iframe>
+    <p>Use the input bar below to type in a URL to a song! NOTE: it must be the embed url, which you can get from the "share" button on the youtube page. It should be the first thing that pops up when you press share.</p>
+
+    <!--Add a form tag to connect to Java controller-->
+
+    <form id="URLsender" action="/jukebox" method="GET" >
+        <label for="jukeboxinput">Copy-paste your URL:</label> <!-- input field is below -->
+        <input type="text" id="jukeboxinput" name="jukeboxinput" required minlength="0" maxlength="100" size="10">
+        <button>Enter!</button>
+    </form>
+
+    <!--The above does NOT currently do anything yet!-->
+    <!--Still need to use a button to call the controller!!111!!!!!1-->
+
+    <iframe width="560" height="315" th:src=${inputtedUrl} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!--Need inputtedUrl and NOT URLinput-->
+    <!--ALSO note that it's inputted U r l and NOT U R L --->
+    <p th:text="'Here is the most recent addition to the sql database: ' + ${URLinput}"></p>
+    <p th:text="'The url you input BUT in reverse: ' + ${reversedInput}"></p>
 
 </body>
 </html>

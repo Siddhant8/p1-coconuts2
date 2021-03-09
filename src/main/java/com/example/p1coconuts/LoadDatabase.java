@@ -11,7 +11,8 @@ public class LoadDatabase {
     private static final Logger log = LoggerFactory.getLogger(LoadDatabase.class);
 
     @Bean
-    CommandLineRunner initDatabase(CovidRepository repository) {
+    CommandLineRunner initDatabase(CovidRepository repository, JukeBoxRepository songRepository) {
+        //NOTE: the parameter above says "CovidRepository repository" which means it must use CovidRepository in this section!
 
         return args -> {
             log.info("Preloading " + repository.save(new Covid("0-9", 13587)));
@@ -23,6 +24,10 @@ public class LoadDatabase {
             log.info("Preloading " + repository.save(new Covid("60-69", 22289)));
             log.info("Preloading " + repository.save(new Covid("70-79", 10571)));
             log.info("Preloading " + repository.save(new Covid("80+", 7961)));
+
+            log.info("Preloading " + songRepository.save(new JukeBoxModel()));
+            log.info("Preloading " + songRepository.save(new JukeBoxModel("https://youtu.be/BLZWkjBXfN8")));
+
 
         };
     }
