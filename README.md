@@ -57,6 +57,9 @@ https://github.com/AndrewH06/teashop2
 
 This program uses a database to dynamically generate products and item in your cart. To add something to your cart, click the cart+ icon on the card for the product you want. The item then is generated in your cart array and stored in your cookies.
 
+### Technicals ###
+This program uses dynamic rendering and a database for the cart and products.
+
 ## Coconuts Chat ##
 https://coconutschat.tk
 
@@ -70,7 +73,8 @@ User: johnm Pass: johnm
 
 This site is a personalized chat system where I can manage users and chat rooms. Right now, you can send messages and images using this program. To send a message, type what you want to send and hit the "enter" key on your keyboard, or the arrow on the screen. To upload an image, hit the image icon on the message line and upload a file. This is a chat system created with API.
 
-
+### Technicals ###
+This program uses a much more advanced database. It stores the logins and does login varification. It also saves your account login in your local storage. You are able to send messages and images to others in different chat rooms similar to slack.
 
 
 ### Members' Github Links ###
