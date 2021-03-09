@@ -49,7 +49,7 @@ For now, a sample youtube url has been embedded, along with an input field to th
 
 
 ## Coconuts Shopping ##
-https://www.p1coconuts.tk/
+https://coconuts-teashop.tk/
 
 ![image](https://user-images.githubusercontent.com/54915593/108390132-3369cd80-71c5-11eb-9279-eb70cfae03d2.png)
 ![image](https://user-images.githubusercontent.com/54915593/108390158-3bc20880-71c5-11eb-90fe-070470ccdb97.png)
