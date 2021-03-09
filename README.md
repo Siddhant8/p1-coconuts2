@@ -36,7 +36,7 @@ This site is a personalized chat system where I can manage users and chat rooms.
 <img width="1440" alt="Screen Shot 2021-03-07 at 8 22 49 PM" src="https://user-images.githubusercontent.com/71453341/110274151-04a07500-7f83-11eb-86bc-8417f897d83a.png">
 
 ### Summary ###
-The coronavirus case simulator simulates the exponential growth of the coronavirus pandemic for a community of 2000 people. The Exponential growth formula is written in 4 different ways. There will be one web page for each formula. For each web page, the initial number of people who have coronavirus is 1 percent of the total population. The user will input the number of days the coronavirus pandemic has gone on for during the simulation. The maximum number of days the user can input into the system is 25. When the user clicks enter the total number of coronavirus cases up to that specific day into the pandemic will appear on the webpage. After the simulation this webpage contains more information about what exponential growth is and provides warnings about the dangers of the coronavirus pandemic.
+The coronavirus case simulator simulates the exponential growth of the coronavirus pandemic for a community of 2000 people. The Exponential growth formula is written in 4 different ways. There will be one web page for each formula. For each web page, the initial number of people who have coronavirus is 1 percent of the total population. The user will input the number of days the coronavirus pandemic has gone on for during the simulation. The minumum number of days the user can input is 1 and the maximum number of days the user can input into the system is 25. When the user clicks enter the total number of coronavirus cases up to that specific day into the pandemic will appear on the webpage. After the simulation this webpage contains more information defining exponential growth.
 
 ### Runtime ###
 On the main menu bar of the home page there is a button that says Covid-19 Simulation. Clicking that button will take the user to the simulation page that contains a description about exponential growth and the simulation using the first version of the exponential growth formula. Attatched are links to the simulations using the second formula, the third formula, and the fourth formula. There will be a small portion of the text in the beginning explaining the setting and background of the simulation. The user's job is to input a number from 1 to 25 into the textbox on the website. That number 1 - 25 represents the number of days that have passed since the Coronavirus outbreak began. When the user clicks enter after inputting their number, the line of text below the textfield displays the total number of cases up to the day number the user has inputted. After the simulation there is another small section of text describing exponential growth as more information about the simulation.
@@ -59,10 +59,6 @@ This jukebox can be navigated to by clicking the link "go to jukebox here" on th
 For now, a sample youtube url has been embedded, along with an input field to the left (it doesn't do anything right now). There's also a link to go straight back to the home page.
 
 
-## Big Ticket Items ##
-
-<img width="771" alt="Screen Shot 2021-01-27 at 8 01 51 AM" src="https://user-images.githubusercontent.com/71453341/106018351-44b43400-6076-11eb-85a3-48a61aa70f7f.png">
-<img width="769" alt="Screen Shot 2021-01-27 at 8 02 24 AM" src="https://user-images.githubusercontent.com/71453341/106018358-467df780-6076-11eb-9ca5-a9399211193b.png">
 
 ### Visual Display of Tickets ###
 <img width="785" alt="Screen Shot 2021-02-02 at 8 12 56 PM" src="https://user-images.githubusercontent.com/71453341/106697185-1e6d2780-6593-11eb-9719-c7b0d467b7eb.png">
