@@ -54,11 +54,7 @@ public class CovidCases {
         double nonMaskWearers = people - maskers;
         double doubleNonMaskWearers = nonMaskWearers;
         System.out.println(nonMaskWearers);
-        //double calculationProportion = 1/maskers;
         double calculationProportion = nonMaskWearers / people;
-        //double dubNumMaskers = maskers;
-        //double calculationProportion = dubNumMaskers/numPeople ;
-        //double calculationProportion = 0.2;
         System.out.println(calculationProportion);
         System.out.println(days);
         double doubleNumberOfDays = (double) days;
@@ -85,8 +81,6 @@ public class CovidCases {
     }
 
     public static void main(String[] args) throws IOException {
-        //CovidCases case1 = new CovidCases(50);
-        //case1.setFinalCases();
         System.out.println(CovidCases.driver(25));
 
     }
