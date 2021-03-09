@@ -15,6 +15,10 @@ The "Done" Column contains each person's code links to the code for their respec
 
 ## FRQs ##
 To get to the FRQs, click the coconuts on the home page.
+![image](https://user-images.githubusercontent.com/54915593/110502322-f3a15200-80af-11eb-993a-c1fc31d47e08.png)
+
+Here you will find the link to the journal and all of our FRQs from the year.
+![image](https://user-images.githubusercontent.com/54915593/110502352-fb60f680-80af-11eb-9a0e-a2759c99a6c1.png)
 
 ## Coronavirus Case Calculator ##
 
