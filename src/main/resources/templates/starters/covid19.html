@@ -3,7 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <title>Coronavirus Calculator</title>
+    <style>
+      * {
+          margin: 0;
+          box-sizing: border-box;
+          font-family: "Open Sans", sans-serif;
+      }
+
+      header {
+      padding: 6px 10px;
+      display: flex;
+      height: 68px;
+      background-color: #1a2d52;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+    }
+
+    nav {
+      width: 100vw;
+    }
+
+    nav ul {
+      transform: translateX(-40px);
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+      margin: 15px 15rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      transition: 0.2s;
+    }
+
+    nav ul li a:hover {
+      padding: 0 10px 0 10px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #7ae582;
+    }
+    </style>
 </head>
+<header>
+  <a href="/"
+    ><img
+      class="logo"
+      src="https://www.pinclipart.com/picdir/big/20-204396_coconut-clipart-coconut-fruit-clipart-png-download.png"
+      alt="coconuts logo"
+  /></a>
+  <nav>
+    <ul class="navbar-links">
+      <li><a href="/covid">Covid-19 Simulation</a></li>
+      <li><a href="/jukebox">Jukebox</a></li>
+      <li><a href="http://coconuts-teashop.tk/">Teashop</a></li>
+      <li><a href="https://coconutschat.tk/">Chat</a></li>
+    </ul>
+  </nav>
+</header>
 <body>
 
 <div class="contact" style="height: 35vh;">

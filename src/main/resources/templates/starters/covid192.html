@@ -1,39 +1,106 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Coronavirus Calculator</title>
-</head>
-<body>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Open Sans", sans-serif;
+      }
 
-<div class="contact" style="height: 35vh;">
-    <div class="contact" style="height: 35vh;">
+      header {
+        padding: 6px 10px;
+        display: flex;
+        height: 68px;
+        background-color: #1a2d52;
+        margin-bottom: 20px;
+      }
 
-        <div style="margin: 2%;">
-            <h1><strong>Calculate the Number of Coronavirus Cases - Formula 2</strong></h1>
+      .logo {
+        width: 50px;
+        height: 50px;
+      }
+
+      nav {
+        width: 100vw;
+      }
+
+      nav ul {
+        transform: translateX(-40px);
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        margin: 15px 15rem;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        transition: 0.2s;
+      }
+
+      nav ul li a:hover {
+        padding: 0 10px 0 10px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #7ae582;
+      }
+    </style>
+  </head>
+  <header>
+    <a href="/"
+      ><img
+        class="logo"
+        src="https://www.pinclipart.com/picdir/big/20-204396_coconut-clipart-coconut-fruit-clipart-png-download.png"
+        alt="coconuts logo"
+    /></a>
+    <nav>
+      <ul class="navbar-links">
+        <li><a href="/covid">Covid-19 Simulation</a></li>
+        <li><a href="/jukebox">Jukebox</a></li>
+        <li><a href="http://coconuts-teashop.tk/">Teashop</a></li>
+        <li><a href="https://coconutschat.tk/">Chat</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <div class="contact" style="height: 35vh">
+      <div class="contact" style="height: 35vh">
+        <div style="margin: 2%">
+          <h1>
+            <strong
+              >Calculate the Number of Coronavirus Cases - Formula 2</strong
+            >
+          </h1>
         </div>
-        <div style="margin: 2%;"></div>
+        <div style="margin: 2%"></div>
         <p><a href="/covid">Formula 1</a></p>
         <p><a href="/covid3">Formula 3</a></p>
         <p><a href="/covid4">Formula 4</a></p>
 
-        <div style="margin: 2%;">
-            <form id="covidCalc" action="/covid2" method="GET" >
-                <label for="days">Type the number of days:</label>
-                <input name="days" id="days" type="number" min = "1" max = "25">
-                <button>Enter!</button>
-            </form>
+        <div style="margin: 2%">
+          <form id="covidCalc" action="/covid2" method="GET">
+            <label for="days">Type the number of days:</label>
+            <input name="days" id="days" type="number" min="1" max="25" />
+            <button>Enter!</button>
+          </form>
         </div>
-        <div style="margin: 2%;">
-            <p>Formula: y = y<sub>0</sub> (r) <sup>t</sup></p>
-            <p th:text="'Number of Cases with a population of 2000: ' + ${days}"></p>
-
+        <div style="margin: 2%">
+          <p>Formula: y = y<sub>0</sub> (r) <sup>t</sup></p>
+          <p
+            th:text="'Number of Cases with a population of 2000: ' + ${days}"
+          ></p>
         </div>
-        <div style="margin: 2%;"></div>
-        <p>In this formula modelling exponential growth y represents the total number of cases, y<sub>0</sub> represents the initial number of coronavirus cases, r represents the fixed, constant growth rate, and t represents the number of days since the pandemic started.</p>
+        <div style="margin: 2%"></div>
+        <p>
+          In this formula modelling exponential growth y represents the total
+          number of cases, y<sub>0</sub> represents the initial number of
+          coronavirus cases, r represents the fixed, constant growth rate, and t
+          represents the number of days since the pandemic started.
+        </p>
+      </div>
     </div>
-
-</div>
-
-</body>
+  </body>
 </html>
