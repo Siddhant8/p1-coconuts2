@@ -9,27 +9,12 @@ https://github.com/Siddhant8/p1-coconuts2/projects/2
 
 The "Done" Column contains each person's code links to the code for their respective tickets.
 
-## Coconuts Shopping ##
-https://www.p1coconuts.tk/
+## Homepage ##
 
-![image](https://user-images.githubusercontent.com/54915593/108390132-3369cd80-71c5-11eb-9279-eb70cfae03d2.png)
-![image](https://user-images.githubusercontent.com/54915593/108390158-3bc20880-71c5-11eb-90fe-070470ccdb97.png)
-https://github.com/AndrewH06/teashop2
+![image](https://user-images.githubusercontent.com/54915593/110501992-9f966d80-80af-11eb-974f-bb9aacc40513.png)
 
-This program uses a database to dynamically generate products and item in your cart. To add something to your cart, click the cart+ icon on the card for the product you want. The item then is generated in your cart array and stored in your cookies.
-
-## Coconuts Chat ##
-https://coconutschat.tk
-
-![image](https://user-images.githubusercontent.com/54915593/108390067-22b95780-71c5-11eb-9572-d6d2cc1f3c31.png)
-https://github.com/AndrewH06/coconutschat
-
-Logins:
-User: aidanr Pass: aidanr
-User: siddhantr Pass: siddhantr
-User: johnm Pass: johnm
-
-This site is a personalized chat system where I can manage users and chat rooms. Right now, you can send messages and images using this program. To send a message, type what you want to send and hit the "enter" key on your keyboard, or the arrow on the screen. To upload an image, hit the image icon on the message line and upload a file. This is a chat system created with API.
+## FRQs ##
+To get to the FRQs, click the coconuts on the home page.
 
 ## Coronavirus Case Calculator ##
 
@@ -58,6 +43,28 @@ This jukebox can be navigated to by clicking the link "go to jukebox here" on th
 
 For now, a sample youtube url has been embedded, along with an input field to the left (it doesn't do anything right now). There's also a link to go straight back to the home page.
 
+
+## Coconuts Shopping ##
+https://www.p1coconuts.tk/
+
+![image](https://user-images.githubusercontent.com/54915593/108390132-3369cd80-71c5-11eb-9279-eb70cfae03d2.png)
+![image](https://user-images.githubusercontent.com/54915593/108390158-3bc20880-71c5-11eb-90fe-070470ccdb97.png)
+https://github.com/AndrewH06/teashop2
+
+This program uses a database to dynamically generate products and item in your cart. To add something to your cart, click the cart+ icon on the card for the product you want. The item then is generated in your cart array and stored in your cookies.
+
+## Coconuts Chat ##
+https://coconutschat.tk
+
+![image](https://user-images.githubusercontent.com/54915593/108390067-22b95780-71c5-11eb-9572-d6d2cc1f3c31.png)
+https://github.com/AndrewH06/coconutschat
+
+Logins:
+User: aidanr Pass: aidanr
+User: siddhantr Pass: siddhantr
+User: johnm Pass: johnm
+
+This site is a personalized chat system where I can manage users and chat rooms. Right now, you can send messages and images using this program. To send a message, type what you want to send and hit the "enter" key on your keyboard, or the arrow on the screen. To upload an image, hit the image icon on the message line and upload a file. This is a chat system created with API.
 
 
 ### Visual Display of Tickets ###
