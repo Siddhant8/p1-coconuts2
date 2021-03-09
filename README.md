@@ -71,9 +71,6 @@ User: johnm Pass: johnm
 This site is a personalized chat system where I can manage users and chat rooms. Right now, you can send messages and images using this program. To send a message, type what you want to send and hit the "enter" key on your keyboard, or the arrow on the screen. To upload an image, hit the image icon on the message line and upload a file. This is a chat system created with API.
 
 
-### Visual Display of Tickets ###
-<img width="785" alt="Screen Shot 2021-02-02 at 8 12 56 PM" src="https://user-images.githubusercontent.com/71453341/106697185-1e6d2780-6593-11eb-9719-c7b0d467b7eb.png">
-
 
 
 ### Members' Github Links ###
