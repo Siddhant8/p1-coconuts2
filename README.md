@@ -20,6 +20,28 @@ To get to the FRQs, click the coconuts on the home page.
 Here you will find the link to the journal and all of our FRQs from the year.
 ![image](https://user-images.githubusercontent.com/54915593/110502352-fb60f680-80af-11eb-9a0e-a2759c99a6c1.png)
 
+## Juke Box Technicals ##
+
+The jukebox uses these files: jukebox.html (the view), BasicPojo and JukeBoxModel (my POJO's), JukeBox Controller (for Thymeleaf attributes and database communication), JukeBoxRepository and SongSqlRepository (for handling the database), and load database (to initialize database). 
+
+How does it work? (Technicals):
+in the HTML file, jukebox.html, there is some [Javascript styling](https://github.com/Siddhant8/p1-coconuts2/blob/0921e98c3d38d9dbdac4bc171ac9b8a619cda108/src/main/resources/templates/jukebox.html#L8) and my Thymeleaf syntax is used for [inputs into paragraph tags and a youtube embedding](https://github.com/Siddhant8/p1-coconuts2/blob/0921e98c3d38d9dbdac4bc171ac9b8a619cda108/src/main/resources/templates/jukebox.html#L42) 
+
+The Thymeleaf attributes rely on my JukeBox controller, which revolves around a single button from JukeBox HTML <-- [at the top of the method](https://github.com/Siddhant8/p1-coconuts2/blob/0921e98c3d38d9dbdac4bc171ac9b8a619cda108/src/main/java/com/example/p1coconuts/JukeBoxController.java#L20)
+
+The complicated stuff is the database: everything is initialized in [JukeBoxRepository](https://github.com/Siddhant8/p1-coconuts2/blob/main/src/main/java/com/example/p1coconuts/JukeBoxRepository.java) and [SongSqlRepository](https://github.com/Siddhant8/p1-coconuts2/blob/main/src/main/java/com/example/p1coconuts/SongSqlRepository.java)
+
+Data is saved to the database upon pressing the button in JukeBox.html, and the code is [here](https://github.com/Siddhant8/p1-coconuts2/blob/0921e98c3d38d9dbdac4bc171ac9b8a619cda108/src/main/java/com/example/p1coconuts/JukeBoxController.java#L44). The website relies on using the latest addition to the database to display as a youtube video. There is a bug with this, written below. The URL of the saved JukeBoxModel - my pojo - is fetched by gathering the data as a list, getting the [last element in the list which is the most recent addition](https://github.com/Siddhant8/p1-coconuts2/blob/0921e98c3d38d9dbdac4bc171ac9b8a619cda108/src/main/java/com/example/p1coconuts/JukeBoxController.java#L53). This string is used to display the youtube video, and as text on the page under the attributes [inputtedUrl and reversedInput](https://github.com/Siddhant8/p1-coconuts2/blob/0921e98c3d38d9dbdac4bc171ac9b8a619cda108/src/main/java/com/example/p1coconuts/JukeBoxController.java#L108). 
+
+Runtime: 
+
+Go to the website via Heroku and the provided URL. It should look like the photo above. Then, navigate to a youtube video and use the URL. In reality, you should need the embed link which is from pressing the share button, but my code doesn't work properly so it doesn't matter - for now - what you use. Then go back to the website and copy paste that url to the blank white field. Then press go.
+
+What happens is that the two paragraph tags towards the bottom of the page should update to what you just input, where the second is the same url reversed, and then you can leave the page and return and see the exact same URL. 
+
+Why my youtube embed doesn't work: it's very strange. Despite making sure my Thymeleaf attribute uses actual embed code and running several tests with the information fetched from the database, the HTML tag doesn't seem to accept it. It appears to be an error with HTML rather than Java, and I do not have the time to fix it soon enough. It's especially strange since the URL right now for the youtube embed is just a default value, but the embed continues to break whenever I press the go button. Here is the code for where my URL for the embed is defined [if you'd like to look](https://github.com/Siddhant8/p1-coconuts2/blob/0921e98c3d38d9dbdac4bc171ac9b8a619cda108/src/main/java/com/example/p1coconuts/JukeBoxController.java#L34). Also, even when I defined URL outisde the provided control flow statement, the HTML still glitched out :(.
+
+
 ## Coronavirus Case Calculator ##
 
 <img width="1440" alt="Screen Shot 2021-03-07 at 8 22 49 PM" src="https://user-images.githubusercontent.com/71453341/110274151-04a07500-7f83-11eb-86bc-8417f897d83a.png">
