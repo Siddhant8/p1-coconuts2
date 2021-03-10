@@ -41,7 +41,7 @@ public class JukeBoxController {
             //url = "https://youtu.be/fTczCpIaLAU";
             JukeBoxModel newSong = new JukeBoxModel(url);
             //SongSqlRepository.delete(10); //delete the top most information
-            //SongSqlRepository.save(newSong); //The added stuff always goes on top
+            SongSqlRepository.save(newSong); //The added stuff always goes on top
 
         }
 
@@ -50,14 +50,14 @@ public class JukeBoxController {
 
         //Remember to add HTML instructions!1111!!!!
 
-        //List<JukeBoxModel> songs = SongSqlRepository.listAll();
+        List<JukeBoxModel> songs = SongSqlRepository.listAll();
 
-        //String songsSize = songs.toString(); //use this to see a list of the objects
+        String songsSize = songs.toString(); //use this to see a list of the objects
 
-        //int highestIndex = songs.size() - 1; //<-- -1 to deal with
+        int highestIndex = songs.size() - 1; //<-- -1 to deal with
 
 
-        //String usedUrl = songs.get(highestIndex).getUrl(); //Append quotation marks to the end... maybe that will help?
+        String usedUrl = songs.get(highestIndex).getUrl(); //Append quotation marks to the end... maybe that will help?
 
         //for (JukeBoxModel song : songs) { //Remember, .listAll returns a list!
 
@@ -103,9 +103,9 @@ public class JukeBoxController {
 
 
         //stringReverse.reverse(url)
-        model.addAttribute("URLinput", url); //This is a Thymeleaf attribute. It can be called in the .html page
+        model.addAttribute("URLinput", usedUrl); //This is a Thymeleaf attribute. It can be called in the .html page
 
-        model.addAttribute("reversedInput", stringReverse.reverse(url)); //<-- use this to display top most data row in reverse
+        model.addAttribute("reversedInput", stringReverse.reverse(usedUrl)); //<-- use this to display top most data row in reverse
 
         model.addAttribute("inputtedUrl", url); //Use this Thymeleaf attribute to display the youtube video
         //test for if a value exists (isn't null) <-- thymeleaf ifs. Use default value up above in @RequestParam
