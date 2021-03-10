@@ -95,7 +95,7 @@ This site is a personalized chat system where I can manage users and chat rooms.
 This program uses a much more advanced database. It stores the logins and does login varification. It also saves your account login in your local storage. You are able to send messages and images to others in different chat rooms similar to slack.
 
 ## Coronavirus Database - Side project ##
-This is a built in database that shows the the number of coronavirus cases in San Diego County for each age group in February. Click the Covid-19 Database button in the main menu to access it. The database was built by inputting the data into a built in H2 Database. The Controller then connected to both the built-in database and the model code that printed out the database in a specific form.
+This is a built in database that shows the the number of coronavirus cases in San Diego County for each age group as of February 15th. Click the Covid-19 Database button in the main menu to access it. The database was built by inputting the data into a built in H2 Database. The Controller then connected to both the built-in database and the model code that printed out the database in a specific form.
 
 
 ### Members' Github Links ###
