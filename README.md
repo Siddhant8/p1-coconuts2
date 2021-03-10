@@ -6,10 +6,15 @@ Summary: Our project involves creating a tea shop web server using Spring, and i
 
 # Link to Scrum Board #
 https://github.com/Siddhant8/p1-coconuts2/projects/2
+### Assignments ###
+Siddhant - Create the Coronavirus Case Calculator and write it in four ways.
 
-The "Done" Column contains each person's code links to the code for their respective tickets.
+Andrew Hale - Create a REACT tea shop and the Home Page.
 
-## Homepage ##
+Aidan Rosen - Create a JukeBox that saves Youtube URL's into a database.
+
+## Website ##
+https://coconuts1.herokuapp.com/
 
 ![image](https://user-images.githubusercontent.com/54915593/110501992-9f966d80-80af-11eb-974f-bb9aacc40513.png)
 
@@ -43,7 +48,6 @@ What happens is that the two paragraph tags towards the bottom of the page shoul
 
 Why my youtube embed doesn't work: it's very strange. Despite making sure my Thymeleaf attribute uses actual embed code and running several tests with the information fetched from the database, the HTML tag doesn't seem to accept it. It appears to be an error with HTML rather than Java, and I do not have the time to fix it soon enough. It's especially strange since the URL right now for the youtube embed is just a default value, but the embed continues to break whenever I press the go button. Here is the code for where my URL for the embed is defined [if you'd like to look](https://github.com/Siddhant8/p1-coconuts2/blob/0921e98c3d38d9dbdac4bc171ac9b8a619cda108/src/main/java/com/example/p1coconuts/JukeBoxController.java#L34). Also, even when I defined URL outisde the provided control flow statement, the HTML still glitched out :(.
 
-
 ## Coronavirus Case Calculator ##
 
 <img width="1440" alt="Screen Shot 2021-03-07 at 8 22 49 PM" src="https://user-images.githubusercontent.com/71453341/110274151-04a07500-7f83-11eb-86bc-8417f897d83a.png">
@@ -60,16 +64,6 @@ On the main menu bar of the home page there is a button that says Covid-19 Simul
 
 ### Technicals Outline ###
 For each specific web page, an MVC design structure is used to handle user input and perform actions based on user input. The code is split into the model, the controller, and the view. The model code uses instance variables, constructors, getters and setters, static methods, and objects to handle data and user input. The view code is written in HTML. Links are embeded to access the different web pages for this coronavirus case simulation and to access the home page. A textfield is created to input the number of days and a button is created to enter the number of cases into the system in html. ${} is used to display the total number of cases on the website, which changes with different inputs. Finally, the controller uses GetMapping to create and access the specific query string for each part of the webpage, RequestParam to receive the input, and uses .addAttribute to exchange information between the view and the model. This specific MVC design and these specific technicals are used for each formula's webpage. However, the mathematical operations for the model code for each formula's webpage is different.   
-
-
-## JukeBox ##
-<img width="1023" alt="Screen shot" src="https://user-images.githubusercontent.com/43625295/108452522-80798e00-721d-11eb-8579-192355a4273b.PNG">
-
-Please note that the grey box with the sad file is because the youtube HTML tag doesn't work when running on localhost. Please use the Heroku link to access the site.
-
-This jukebox can be navigated to by clicking the link "go to jukebox here" on the home page. This JukeBox will be basically the same as the Java version, where URLs can be saved as "cassettes". The difference now will be that urls will be stored in a database as a key-value pair, and will be fetched whenever the site is loaded. 
-
-For now, a sample youtube url has been embedded, along with an input field to the left (it doesn't do anything right now). There's also a link to go straight back to the home page.
 
 
 ## Coconuts Shopping ##
@@ -99,6 +93,9 @@ This site is a personalized chat system where I can manage users and chat rooms.
 
 ### Technicals ###
 This program uses a much more advanced database. It stores the logins and does login varification. It also saves your account login in your local storage. You are able to send messages and images to others in different chat rooms similar to slack.
+
+## Coronavirus Database - Side project ##
+This is a built in database that shows the the number of coronavirus cases in San Diego County for each age group as of February 15th. Click the Covid-19 Database button in the main menu to access it. The database was built by inputting the data into a built in H2 Database. The Controller then connected to both the built-in database and the model code that printed out the database in a specific form.
 
 
 ### Members' Github Links ###

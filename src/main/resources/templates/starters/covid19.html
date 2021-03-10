@@ -1,103 +1,115 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Coronavirus Calculator</title>
     <style>
       * {
-          margin: 0;
-          box-sizing: border-box;
-          font-family: "Open Sans", sans-serif;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Open Sans", sans-serif;
       }
 
       header {
-      padding: 6px 10px;
-      display: flex;
-      height: 68px;
-      background-color: #1a2d52;
-      margin-bottom: 20px;
-    }
+        padding: 6px 10px;
+        display: flex;
+        height: 68px;
+        background-color: #1a2d52;
+        margin-bottom: 20px;
+      }
 
-    .logo {
-      width: 50px;
-      height: 50px;
-    }
+      .logo {
+        width: 50px;
+        height: 50px;
+      }
 
-    nav {
-      width: 100vw;
-    }
+      nav {
+        width: 100vw;
+      }
 
-    nav ul {
-      transform: translateX(-40px);
-      display: flex;
-      list-style: none;
-      justify-content: space-between;
-      margin: 15px 15rem;
-    }
+      nav ul {
+        transform: translateX(-40px);
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        margin: 15px 15rem;
+      }
 
-    nav ul li a {
-      text-decoration: none;
-      color: #fff;
-      transition: 0.2s;
-    }
+      nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        transition: 0.2s;
+      }
 
-    nav ul li a:hover {
-      padding: 0 10px 0 10px;
-      font-size: 18px;
-      font-weight: 600;
-      color: #7ae582;
-    }
+      nav ul li a:hover {
+        padding: 0 10px 0 10px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #7ae582;
+      }
     </style>
-</head>
-<header>
-  <a href="/"
-    ><img
-      class="logo"
-      src="https://www.pinclipart.com/picdir/big/20-204396_coconut-clipart-coconut-fruit-clipart-png-download.png"
-      alt="coconuts logo"
-  /></a>
-  <nav>
-    <ul class="navbar-links">
-      <li><a href="/covid">Covid-19 Simulation</a></li>
-      <li><a href="/jukebox">Jukebox</a></li>
-      <li><a href="http://coconuts-teashop.tk/">Teashop</a></li>
-      <li><a href="https://coconutschat.tk/">Chat</a></li>
-    </ul>
-  </nav>
-</header>
-<body>
-
-<div class="contact" style="height: 35vh;">
-    <div class="contact" style="height: 35vh;">
-
-        <div style="margin: 2%;">
-            <h1><strong>Calculate the Number of Coronavirus Cases - Exponential Growth Description and Formula 1</strong></h1>
-        </div>
-        <div style="margin: 2%;"></div>
-        <p th:text="'This Coronavirus case simulation calculates the number of cases for a population of 2000 people. 83 percent of the population is wearing masks. The initial number of cases is 20. The user will enter into the text box how many days they want to have passed since the first day of the outbreak. When the user clicks the button enter next to the text box the total number of cases there have been on the day number the user inputs.'"></p>
-        <p th:text="'The coronavirus growth rate formula used for this simulation can be rewritten in 3 other ways. On this specific website this same simulation is repeated three other times but the growth rate formula is rewritten each time. The formula used on this specific page is labelled as Formula 1. The three links below are to different pages modelling this simulation with different formulas. '"></p>
-
-        <p><a href="/covid2">Formula 2</a>  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<a href="/covid3">Formula 3</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <a href="/covid4">Formula 4</a></p>
-        <div style="margin: 2%;">
-            <form id="covidCalc" action="/covid" method="GET" >
-                <label for="days">Type the number of days:</label>
-                <input name="days" id="days" type="number" min = "1" max = "25">
-                <button>Enter!</button>
-            </form>
-        </div>
-        <div style="margin: 2%;">
-            <p>Formula: y = y<sub>0</sub> e <sup>kt</sup></p>
-            <p th:text="'Number of Cases with a population of 2000: ' + ${days}"></p>
-
+  </head>
+  <header>
+    <a href="/"
+      ><img
+        class="logo"
+        src="https://www.pinclipart.com/picdir/big/20-204396_coconut-clipart-coconut-fruit-clipart-png-download.png"
+        alt="coconuts logo"
+    /></a>
+    <nav>
+      <ul class="navbar-links">
+        <li><a href="/covid">Covid-19 Simulation</a></li>
+        <li><a href="/cases">Covid-19 Database</a></li>
+        <li><a href="http://coconuts-teashop.tk/">Teashop</a></li>
+        <li><a href="https://coconutschat.tk/">Chat</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <div class="contact" style="height: 35vh">
+      <div class="contact" style="height: 35vh">
+        <div style="margin: 2%">
+          <h1>
+            <strong
+              >Calculate the Number of Coronavirus Cases - Exponential Growth
+              Description and Formula 1</strong
+            >
+          </h1>
         </div>
 
+        <div style="margin: 2%"></div>
+        <p
+          th:text="'This Coronavirus case simulation calculates the number of cases for a population of 2000 people. 83 percent of the population is wearing masks. The initial number of cases is 20. The user will enter into the text box how many days they want to have passed since the first day of the outbreak. When the user clicks the button enter next to the text box the total number of cases there have been on the day number the user inputs.'"
+        ></p>
+        <p
+          th:text="'The coronavirus growth rate formula used for this simulation can be rewritten in 3 other ways. On this specific website this same simulation is repeated three other times but the growth rate formula is rewritten each time. The formula used on this specific page is labelled as Formula 1 The three links below are to different pages modelling this simulation with different formulas. '"
+        ></p>
+        <p>
+          <a href="/covid2">Formula 2</a> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+          &nbsp;&nbsp; &nbsp;&nbsp;<a href="/covid3">Formula 3</a
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+          <a href="/covid4">Formula 4</a>
+        </p>
+        <div style="margin: 2%">
+          <form id="covidCalc" action="/covid" method="GET">
+            <label for="days">Type the number of days:</label>
+            <input name="days" id="days" type="number" min="1" max="25" />
+            <button>Enter!</button>
+          </form>
 
-        <div style="margin: 2%;"></div>
-            <p th:text="'The growth of coronavirus cases is undergoing an exponential growth pattern. In exponential growth the more time that passes the faster the number of coronavirus cases will increase. y represents the total number of cases, 20 is the initial number of cases, and k is the proportion of the population not wearing face masks. The exponential growth rate itself is constant.'"> </p>
+        </div>
+        <div style="margin: 2%">
+          <p>Formula: y = y<sub>0</sub> e <sup>kt</sup></p>
+          <p
+            th:text="'Number of Cases with a population of 2000: ' + ${days}"
+          ></p>
         </div>
 
-
-</div>
-
-</body>
+        <div style="margin: 2%"></div>
+        <p
+          th:text="'The growth of coronavirus cases is undergoing an exponential growth pattern. In exponential growth the more time that passes the faster the number of coronavirus cases will increase. y represents the total number of cases, 20 is the initial number of cases, and k is the proportion of the population not wearing face masks. The exponential growth rate itself is constant.'"
+        ></p>
+      </div>
+    </div>
+  </body>
 </html>
