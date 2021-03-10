@@ -7,7 +7,7 @@ Summary: Our project involves creating a tea shop web server using Spring, and i
 # Link to Scrum Board #
 https://github.com/Siddhant8/p1-coconuts2/projects/2
 
-The "Done" Column contains each person's code links to the code for their respective tickets.
+The scrum board lists each person's assignments and tickets.
 
 ## Website ##
 https://coconuts1.herokuapp.com/
