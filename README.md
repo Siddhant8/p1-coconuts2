@@ -6,8 +6,10 @@ Summary: Our project involves creating a tea shop web server using Spring, and i
 
 # Link to Scrum Board #
 https://github.com/Siddhant8/p1-coconuts2/projects/2
-
-The scrum board lists each person's assignments and tickets.
+### Assignments ###
+Siddhant - Create the Coronavirus Case Calculator and write it in four ways.
+Andrew Hale - Create a REACT tea shop and the Home Page.
+Aidan Rosen - Create a JukeBox that saves Youtube URL's into a database.
 
 ## Website ##
 https://coconuts1.herokuapp.com/
